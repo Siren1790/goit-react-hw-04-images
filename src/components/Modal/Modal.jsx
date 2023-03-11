@@ -3,18 +3,17 @@ import PropTypes from 'prop-types';
 import { ModalOverlay, ModalContainer } from './Modal.styled';
 
 export const Modal = ({ selectedImage, alt, onClose }) => {
-
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-    }
-  }, [])
+    };
+  });
 
   const handleKeyDown = e => {
     if (e.code === 'Escape') {
-      this.props.onClose();
+      onClose();
     }
   };
 
