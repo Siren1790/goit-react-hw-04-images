@@ -34,7 +34,6 @@ export const SearchFormBtn = styled.button`
   width: 48px;
   height: 48px;
   border: 0;
-  background-image: url('./search.png');
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
